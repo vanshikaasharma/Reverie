@@ -9,16 +9,19 @@ Spoiler-safe book club app for mobile. Discussion is gated by reading progress â
 - **API:** API Gateway + Lambda
 - **Database:** Aurora DSQL
 
-## Project structure (planned)
+## Project structure
 
 ```
 app/          Expo Router screens
-src/          Shared client code (api, auth, types)
-api/          Lambda handlers
-infra/        AWS CDK
+src/          Shared client code (types, api, auth)
+api/          Lambda handlers (planned)
+infra/        AWS CDK (planned)
 ```
 
 ## Getting started
 
-Setup instructions will be added as each piece is built.
-npm run web
+```bash
+npm install   # only needed on a fresh clone
+npm start     # scan QR code with Expo Go on your phone
+```
+
