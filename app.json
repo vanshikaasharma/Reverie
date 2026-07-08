@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "_expo-tmp",
-    "slug": "_expo-tmp",
+    "name": "Reverie",
+    "slug": "reverie",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "expotmp",
+    "scheme": "reverie",
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true
