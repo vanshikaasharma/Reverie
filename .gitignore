@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native build artifacts
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+android/
+ios/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# CDK
+infra/cdk.out/
+*.js.map
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+
+# Test / coverage
+coverage/
