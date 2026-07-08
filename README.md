@@ -21,3 +21,4 @@ infra/        AWS CDK
 ## Getting started
 
 Setup instructions will be added as each piece is built.
+npm run web
