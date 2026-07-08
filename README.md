@@ -15,13 +15,26 @@ Spoiler-safe book club app for mobile. Discussion is gated by reading progress â
 app/          Expo Router screens
 src/          Shared client code (types, api, auth)
 api/          Lambda handlers (planned)
-infra/        AWS CDK (planned)
+infra/        AWS CDK
 ```
 
 ## Getting started
 
+### Mobile app
+
 ```bash
 npm install   # only needed on a fresh clone
 npm start     # scan QR code with Expo Go on your phone
+npm run web   # open in browser
 ```
+
+### Infrastructure (CDK)
+
+```bash
+cd infra
+npm install
+npm run synth   # validates the stack template â€” does not deploy anything
+```
+
+Deploy and teardown commands will be added when AWS resources are defined.
 
