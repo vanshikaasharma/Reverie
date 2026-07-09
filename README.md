@@ -14,8 +14,8 @@ Spoiler-safe book club app for mobile. Discussion is gated by reading progress â
 ```
 app/          Expo Router screens
 src/          Shared client code (types, api, auth)
-api/          Lambda handlers (planned)
-infra/        AWS CDK
+api/          Lambda handlers
+infra/        AWS CDK + SQL schema
 ```
 
 ## Getting started
@@ -36,7 +36,25 @@ npm install
 npm run synth   # validates the stack template â€” does not deploy anything
 ```
 
-Deploy and teardown commands will be added when AWS resources are defined.
+When you are ready to create Cognito + API Gateway + the `/me` Lambda in AWS:
+
+```bash
+cd infra
+npx cdk bootstrap   # once per account/region
+npm run deploy
+```
+
+After deploy, copy the stack outputs (`UserPoolId`, `UserPoolClientId`, `ApiUrl`) into a local `.env` for the Expo app. Tear down with `npm run destroy`.
+
+### API handlers
+
+```bash
+cd api
+npm install
+npm run typecheck
+```
+
+`GET /me` returns `{ userId }` from the verified Cognito JWT (`sub`). More routes (clubs, comments, spoiler gate) come next.
 
 ### Database
 

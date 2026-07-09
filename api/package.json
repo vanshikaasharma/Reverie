@@ -1,0 +1,14 @@
+{
+  "name": "reverie-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^22.10.0",
+    "esbuild": "^0.25.0",
+    "typescript": "~5.7.2"
+  }
+}
