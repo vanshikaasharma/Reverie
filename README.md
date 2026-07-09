@@ -38,3 +38,7 @@ npm run synth   # validates the stack template — does not deploy anything
 
 Deploy and teardown commands will be added when AWS resources are defined.
 
+### Database
+
+SQL schema lives in `infra/sql/schema.sql`. See `infra/sql/README.md` for table overview and how to apply it once a DSQL cluster exists.
+
