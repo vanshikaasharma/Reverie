@@ -1,4 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
+import { router } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -33,7 +34,7 @@ export default function ClubsScreen() {
         ))}
       </ScrollView>
 
-      <Pressable style={styles.fab}>
+      <Pressable style={styles.fab} onPress={() => router.push('/create-join')}>
         <Text style={styles.fabText}>Create or Join Club</Text>
         <View style={styles.fabPlus}>
           <Ionicons name="add" size={22} color={colors.forest} />
